@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Multiplication Table</title>
+</head>
+<style>
+
+body{
+        background-color: #BCE6EB;
+    } 
+
+input{
+margin: 10px;
+padding: 10px;
+}
+
+.btn {
+	margin: 10px;
+padding: 10px;
+}
+
+</style>
+<body>
+	<input type="number" placeholder="First Number" id="snumber"><br>
+    <input type="number" placeholder="Last Number" id="lnumber"><br>  
+    <input type="number" placeholder="Multiplier" id="multiplier"><br> 
+    <button class="btn" onclick="multiplication()">Click me!</button>
+    <br>
+</body>
+<script type="text/javascript">
+function multiplication(){
+        var snumber=+document.getElementById('snumber').value;
+        var lnumber=+document.getElementById('lnumber').value;
+        var multiplier=+document.getElementById('multiplier').value;
+        
+
+        for(var i = snumber; i <= lnumber; i++){
+            result = i * multiplier;
+            document.write(i + " x " + multiplier + " = " +  result + "<br>");
+        }   
+    }  
+	</script>
+
+</body>
+</html>
